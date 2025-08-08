@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose Vite dev server port
-EXPOSE 5173
+EXPOSE 5174
 
 # Start the frontend
 CMD [ "npm", "run", "dev" ]

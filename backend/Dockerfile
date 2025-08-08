@@ -1,23 +1,23 @@
-#use the base image from docker hub
+# Use the base image from Docker Hub
 FROM node:20-alpine
 
+# Install nodemon globally
 RUN npm install -g nodemon
 
-#set the working directory
+# Set the working directory
 WORKDIR /app
 
-# copy the rest of the application files
-COPY . .
+# Copy package files
+COPY package*.json ./
 
-#Install the dependencies
+# Install dependencies
 RUN npm install
 
-#expose the port your app will run on
+# Copy app source code
+COPY . .
+
+# Expose port
 EXPOSE 4000
 
-#start the application
-CMD [ "npm" , "run" , "start" ]
-
-
-
-
+# Start the app using correct script
+CMD [ "npm", "run", "server" ]

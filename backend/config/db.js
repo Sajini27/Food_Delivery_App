@@ -1,5 +1,18 @@
+// backend/config/db.js
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 export const connectDB = async () => {
-    await mongoose.connect('mongodb+srv://sajii:Saji2000@cluster0.kvs6cuy.mongodb.net/food_delivery_app').then(()=>console.log("DB Connected"));
-}
+    try {
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("✅ MongoDB Atlas Connected Successfully");
+    } catch (error) {
+        console.error("❌ MongoDB Connection Failed:", error.message);
+        process.exit(1);
+    }
+};
