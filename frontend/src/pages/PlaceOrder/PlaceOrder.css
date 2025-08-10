@@ -34,7 +34,7 @@
 }
 
 .place-order-left input:focus {
-  border: 1px solid tomato;
+  border: 1px solid rgb(28, 121, 51);
   outline: none;
 }
 
@@ -78,7 +78,7 @@
   width: 100%;
   margin-top: 20px;
   padding: 14px 0;
-  background-color: tomato;
+  background-color: rgb(28, 121, 51);
   color: white;
   border: none;
   border-radius: 8px;
@@ -88,5 +88,5 @@
 }
 
 .cart-total button:hover {
-  background-color: tomato;
+  background-color: rgb(28, 121, 51);
 }

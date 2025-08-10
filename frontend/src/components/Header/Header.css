@@ -1,7 +1,7 @@
 .header{
     height: 34vw;
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
+    background: url('/header_img_new.png') no-repeat;
     background: contain;
     position: relative;
 }
@@ -13,7 +13,7 @@
     align-items: start;
     gap: 1.5vw;
     max-width: 50%;
-    bottom: 10%;
+    bottom: 20%;
     left: 6vw;
     animation: fadeIn 3s;
 }
@@ -37,6 +37,7 @@
     background-color: white;
     font-size: max(1vw,13px);
     border-radius: 50px;
+    margin-top: 3vw;
 }
 
 @media (max-width:1050px){
