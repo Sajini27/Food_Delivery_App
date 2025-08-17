@@ -8,8 +8,10 @@
 }
 
 .food-item-image{
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
+    width: 100%;           /* Fill the container width */
+    height: 200px;         /* Fixed height for uniformity */
+    object-fit: cover;     /* Crop the image to fit nicely */
+    border-radius: 10px;
 }
 
 

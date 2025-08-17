@@ -28,13 +28,15 @@
     display: none;
 }
 
-.explore-menu-list-item img{
-    width: 7.5vw;
-    min-width: 80px;
+.explore-menu-list-item img {
+    width: 120px;         /* fixed width */
+    height: 120px;        /* fixed height */
+    object-fit: cover;    /* ensures the image fills without distortion */
     cursor: pointer;
-    border-radius: 50%;
+    border-radius: 50%;   /* makes it a circle */
     transition: 0.2s;
 }
+
 
 .explore-menu-list-item p{
     margin-top: 10px;
